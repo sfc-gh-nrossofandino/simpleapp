@@ -14,13 +14,6 @@ coloredlogs.install(level='DEBUG')
 # messages originating from that logger will show up on the terminal.
 coloredlogs.install(level='DEBUG', logger=logger)
 
-# Some examples.
-logger.debug("this is a debugging message")
-logger.info("this is an informational message")
-logger.warning("this is a warning message")
-logger.error("this is an error message")
-logger.critical("this is a critical message")
-
 st.title("Test App!!!")
 
 log_text = st.text_input('Log text:')
