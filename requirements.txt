@@ -1,3 +1,2 @@
 streamlit
-coloredlog
-streamlit-0.65.2-py2.py3-none-any.whls
+streamlit-0.65.2-py2.py3-none-any.whl
