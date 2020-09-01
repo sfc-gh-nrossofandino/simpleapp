@@ -1,5 +1,5 @@
 import streamlit as st
-import coloredlogs, logging
+import logging
 
 # Create a logger object.
 #logger = logging.getLogger(__name__)
