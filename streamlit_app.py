@@ -14,7 +14,12 @@ import logging
 # messages originating from that logger will show up on the terminal.
 #coloredlogs.install(level='DEBUG', logger=logger)
 
-st.title("Test App!!!")
+st.beta_set_page_config(
+    page_title="Heya, world?",
+    page_icon=":shark:",
+)
+
+st.title('Test App')
 
 log_text = st.text_input('Log text:')
 if st.button("send log"):
@@ -29,8 +34,3 @@ if st.button('set query param'):
     st.experimental_set_query_params(test=query_param)
 
 
-if st.button('set page config'):
-    st.beta_set_page_config(
-        page_title="Heya, world?",
-        page_icon=":shark:",
-    )
