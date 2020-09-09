@@ -22,3 +22,8 @@ if st.button("send log"):
 
 
 st.write(st.experimental_get_query_params())
+
+
+query_param = st.text_input("query param:")
+if st.button('set query param'):
+    st.experimental_set_query_params(test=query_param)
