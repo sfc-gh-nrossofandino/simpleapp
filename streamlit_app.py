@@ -14,10 +14,10 @@ import logging
 # messages originating from that logger will show up on the terminal.
 #coloredlogs.install(level='DEBUG', logger=logger)
 
-#st.beta_set_page_config(
-#    page_title="Heya, world?",
-#    page_icon=":shark:",
-#)
+st.beta_set_page_config(
+    page_title="Heya, world?",
+    page_icon=":shark:",
+)
 
 st.title('Test App !🧤🕶')
 
