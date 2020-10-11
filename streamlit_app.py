@@ -28,6 +28,10 @@ if st.button("send log"):
 
 st.write(st.experimental_get_query_params())
 
+st.markdown('''
+        <iframe src='google.com' />
+''', unsafe_allow_html=True)
+
 
 query_param = st.text_input("query param:")
 if st.button('set query param'):
