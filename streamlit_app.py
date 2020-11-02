@@ -1,6 +1,10 @@
 import streamlit as st
 import logging
 
+logFile = open('./errdump.log', 'a')
+
+logFile.write("LOG FILE CREATED")
+
 # Create a logger object.
 #logger = logging.getLogger(__name__)
 
