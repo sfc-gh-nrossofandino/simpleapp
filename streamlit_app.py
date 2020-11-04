@@ -32,5 +32,5 @@ query_param = st.text_input("query param:")
 if st.button('set query param'):
     st.experimental_set_query_params(test=query_param)
 
-st.header('Ysy')
-st.video('https://www.youtube.com/watch?v=mLUZel-6p-g')
+#st.header('Ysy')
+#st.video('https://www.youtube.com/watch?v=mLUZel-6p-g')
