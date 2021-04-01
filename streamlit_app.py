@@ -1,45 +1,23 @@
 import streamlit as st
-import logging
-#import locale
+import numpy as np
 
-#st.write(locale.getlocale())
-#locale.setlocale(locale.LC_ALL, 'de_DE')
-#st.write(locale.getlocale())
+# show images
+# ===========
 
-logFile = open('./errdump.log', 'a')
+cols = st.beta_columns(3)
+for col, img in zip(cols, np.zeros((3, 250, 250, 3))):
+    col.image(img, use_column_width=True)
 
-logFile.write("LOG FILE CREATED")
+# show form
+# =========
 
-# Create a logger object.
-#logger = logging.getLogger(__name__)
+st.text_input("Search term", value="streamlit")
 
-# By default the install() function installs a handler on the root logger,
-# this means that log messages from your code and log messages from the
-# libraries that you use will all show up on the terminal.
-#coloredlogs.install(level='DEBUG')
+col1, col2 = st.beta_columns([2, 1])
+col1.selectbox("1 month ago", options=["A", "B"])
+col2.number_input("Limit", value=10000)
 
-# If you don't want to see log messages from libraries, you can pass a
-# specific logger object to the install() function. In this case only log
-# messages originating from that logger will show up on the terminal.
-#coloredlogs.install(level='DEBUG', logger=logger)
-
-st.set_page_config(
-    page_title="Heya, world?",
-    page_icon=":shark:",
-)
-
-st.title('Test App 🕶')
-
-log_text = st.text_input('Log text:')
-if st.button("send log"):
-    logging.info(log_text)
-
-
-st.write(st.experimental_get_query_params())
-
-query_param = st.text_input("query param:")
-if st.button('set query param'):
-    st.experimental_set_query_params(test=query_param)
-
-#st.header('Ysy')
-#st.video('https://www.youtube.com/watch?v=mLUZel-6p-g')
+col3, col4, col5 = st.beta_columns(3)
+col3.number_input("Minimum replies", value=0)
+col4.number_input("Minimum retweets", value=0)
+col5.number_input("Minimum hearts", value=0)
