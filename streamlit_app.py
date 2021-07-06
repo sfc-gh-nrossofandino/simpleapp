@@ -28,7 +28,7 @@ st.set_page_config(
     page_icon=":shark:",
 )
 
-st.title('Test App 🕶!!!')
+st.title('Test App 🕶!!!!!!!')
 
 log_text = st.text_input('Log text:')
 if st.button("send log"):
