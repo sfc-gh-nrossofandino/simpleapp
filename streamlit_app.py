@@ -1,6 +1,7 @@
 import streamlit as st
 import logging
 #import locale
+import os
 
 #st.write(locale.getlocale())
 #locale.setlocale(locale.LC_ALL, 'de_DE')
@@ -29,6 +30,7 @@ st.set_page_config(
 )
 
 st.title('Test App 🕶!!!!!!!')
+st.write(os.environ)
 
 log_text = st.text_input('Log text:')
 if st.button("send log"):
