@@ -29,7 +29,7 @@ st.set_page_config(
     page_icon=":shark:",
 )
 
-st.title('Test App 🕶!')
+st.title('Test App 🕶!!!')
 st.write(os.environ)
 
 log_text = st.text_input('Log text:')
