@@ -34,7 +34,7 @@ st.write(os.environ)
 
 log_text = st.text_input('Log text:')
 if st.button("send log"):
-    logging.error(log_text)
+    logging.debug(log_text)
 
 
 st.write(st.experimental_get_query_params())
